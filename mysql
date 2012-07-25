@@ -1,0 +1,10 @@
+1.创建用户
+创建本地用户: create user 'username'@'localhost' identified by 'password';
+创建远程用户: create user 'username'@'ip/network' identified by 'password';
+
+2.显示当前时间，用户，版本: select now(), user(), version();
+3.创建数据库 : create database dbname;
+4.显示当前使用的数据库: select database();
+
+
+

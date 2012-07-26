@@ -6,5 +6,30 @@
 3.创建数据库 : create database dbname;
 4.显示当前使用的数据库: select database();
 
+5.插入数据： 
+insert into tablename values(),()
+insert into tablename set xx=xx, xx=xx
+load data locale infile 'filename' into table tablename;
 
+6.重设数据库 ： source filename.sql
+7.赋予权限: grant all on mysqldb.* to 'samuel'@'localhost';
 
+8.where子句里的表达式允许算术，比较，逻辑表达式，还允许使用括号
+算术:+,-,*,/,DIV,%
+逻辑:and,or,xor,not
+比较:<=,<,>,>=,<=>,!=,<>
+
+9.order by 默认为升序排序
+order by xx asc 升序
+order by xx desc 降序
+
+10.limit
+limit 5  返回5个数据
+limit 10,5 返回第10个数据之后的5个数据
+
+11.匹配模式
+like
+not like
+>>>>>>>>>>
+_ : 匹配单个字符
+% : 匹配任意个字符，包括空字符
